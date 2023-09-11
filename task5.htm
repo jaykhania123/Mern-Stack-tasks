@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            text-align: center;
+        }
+        input{
+            width: 98%;
+        }
+        button {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: blue">Registration Form</h1>
+        <table>
+            <tr>
+                <td>
+                    <strong>First Name</strong>
+                </td>
+                <td style="width: 600px;">
+                    <label for="fname"></label>
+                    <input type="text" id="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Last Name</strong>
+                </td>
+                <td style="width: 600px;">
+                    <label for="lname"></label>
+                    <input type="text" id="lname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Email</strong>
+                </td>
+                <td style="width: 600px;">
+                    <label for="email"></label>
+                    <input type="text" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Password</strong>
+                </td>
+                <td style="width: 600px;">
+                    <label for="password"></label>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Re-Enter Password</strong>
+                </td>
+                <td style="width: 600px;">
+                    <label for="repassword"></label>
+                    <input type="password" id="repassword">
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 50px;">
+                    <strong>Gender:</strong>
+                </td>
+                <td style="text-align: left;">
+                    <input type="radio" id="male" style="width: auto;">
+                    <label for="male">Male</label><hr>
+                    <input type="radio" id="female" style="width: auto;">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Age</strong>
+                </td>
+                <td>
+                    <label for="age"></label>
+                    <input type="text" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Phone Number</strong>
+                </td>
+                <td>
+                    <label for="pnumber"></label>
+                    <input type="tel" id="pnumber">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Address</strong>
+                </td>
+                <td>
+                    <label for="address"></label>
+                    <input type="text" id="address" style="height: 100px ;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>State</strong>
+                </td>
+                <td>
+                    <label for="state"></label>
+                    <input type="text" id="state">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Country</strong>
+                </td>
+                <td style="text-align: left;">
+                    <select name="country" id="country">
+                        <option value="Default">Choose your Country</option>
+                        <option value="IN">India</option>
+                        <option value="US">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="JP">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Languages Known</strong>
+                </td>
+                <td style="text-align: left;">
+                    <form>
+                        <input type="checkbox" style="width: auto;">English
+                        <input type="checkbox" style="width: auto;">Hindi
+                        <input type="checkbox" style="width: auto;">Kannada
+                        <input type="checkbox" style="width: auto;">Telegu
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: left;">
+                    <form>
+                        <input type="checkbox" style="width: auto;">Hereby I declare all the given details are true
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <p>Log in to <a href="https://ethnus.com/">ethnus</a> website</p>
+                </td>
+            </tr>
+        </table>
+        <button type="button">Register</button>
+    </center>
+</body>
+</html>

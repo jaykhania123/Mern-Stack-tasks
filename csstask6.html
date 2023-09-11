@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 2.5em auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            margin: 0 auto;
+        }
+
+        .login-box label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            padding: 10px;
+            width: 95%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .login-box #login-btn {
+            background-color: #4CB050;
+            border: none;
+            font-size: 16px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: 20.2em;
+            margin-top: 10px;
+        }
+
+        .login-box #login-btn:hover {
+            background-color: #368d3a;
+        }
+
+        .checkbox-container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 340px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        .forgot-password {
+            display: flex;
+            justify-content: space-between;
+            width: 355px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            padding: 5px;
+        }
+
+        .forgot-password input[type="button"] {
+            align-items: center;
+            border-radius: 5px;
+            height: 2em;
+            margin-top: 6px;
+            background-color: red;
+            color: white;
+            display: flex;
+        }
+
+        .forgot-password .password-link {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/3135715.png"
+        alt="User Profile Picture">
+    <form class="login-box">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <input id="login-btn" type="submit" value="Login">
+    </form>
+    <form class="checkbox-container">
+        <input style="height: 10px;" type="checkbox" id="remember-me" name="remember-me" value="remember">
+        <label for="remember-me">Remember me</label><br>
+    </form>
+    <form class="forgot-password">
+        <input id="cancel-button" type="button" value="Cancel">
+        <p class="password-link"><a href="#" style="color: black;">Forgot password?</a></p>
+    </form>
+</body>
+
+</html>
